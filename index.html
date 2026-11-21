@@ -3,10 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Minha Apostila</title>
+  <title>Minha Apostila Interativa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-  <h1>Minha Apostila Interativa</h1>
-  <p>Se você está vendo isto, o GitHub Pages está funcionando.</p>
+  <header class="topo"><a href="index.html">Minha Apostila Interativa</a></header>
+  <main>
+    <h1>Comece por aqui</h1>
+    <p class="intro">Leia os módulos na ordem, responda aos exercícios e marque cada módulo como concluído. Seu progresso fica salvo neste navegador.</p>
+    <div class="caixa">
+      <p id="texto-progresso" style="margin:0 0 .5rem">0 módulos concluídos</p>
+      <progress id="barra" value="0" max="1" aria-labelledby="texto-progresso"></progress>
+    </div>
+    <ul class="lista" id="lista-modulos"></ul>
+    <noscript><p>Ative o JavaScript para ver a lista de módulos.</p></noscript>
+  </main>
+  <script src="js/app.js"></script>
 </body>
 </html>

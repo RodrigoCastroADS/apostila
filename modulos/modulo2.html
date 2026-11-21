@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <title>Módulo 2: Exemplo de atividade</title>
+</head>
+<body data-modulo="modulo2.html">
+  <header class="topo"><a href="../index.html">Voltar ao índice</a></header>
+  <main>
+    <h1>Módulo 2: Exemplo de atividade</h1>
+    <p class="intro">Aqui estão os tipos de interação prontos para copiar.</p>
+
+    <h2>Quiz de múltipla escolha</h2>
+    <div class="quiz" data-explicacao="O GitHub Pages hospeda sites estáticos de graça.">
+      <p class="pergunta">Que tipo de site o GitHub Pages hospeda?</p>
+      <button class="opcao" data-correta="true">Sites estáticos (HTML, CSS e JavaScript).</button>
+      <button class="opcao" data-correta="false">Apenas sites com banco de dados.</button>
+      <button class="opcao" data-correta="false">Somente aplicativos de celular.</button>
+      <p class="feedback" role="status" aria-live="polite"></p>
+    </div>
+
+    <h2>Resposta escondida</h2>
+    <p>Pense antes de abrir: por que usar caminhos relativos nos links?</p>
+    <details>
+      <summary>Ver resposta</summary>
+      <p>Porque o site fica em uma subpasta no GitHub Pages. Caminhos relativos funcionam local e online.</p>
+    </details>
+
+    <h2>Conclusão</h2>
+    <button class="botao" id="concluir" aria-pressed="false">Marcar como concluído</button>
+    <nav class="navegacao" id="navegacao" aria-label="Navegação entre módulos"></nav>
+  </main>
+  <script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <title>Módulo 1: Como usar esta apostila</title>
+</head>
+<body data-modulo="modulo1.html">
+  <header class="topo"><a href="../index.html">Voltar ao índice</a></header>
+  <main>
+    <h1>Módulo 1: Como usar esta apostila</h1>
+    <p class="intro">Este módulo é um exemplo. Troque os textos pelo seu conteúdo.</p>
+
+    <h2>Estrutura de um módulo</h2>
+    <p>Cada módulo é um arquivo HTML dentro da pasta <code>modulos/</code>. Ele segue três blocos: explicação, exemplo e atividade.</p>
+    <div class="caixa dica"><strong>Dica:</strong> use a classe <code>caixa dica</code> para destacar avisos e observações importantes.</div>
+
+    <h2>Como criar um módulo novo</h2>
+    <p>Copie o <code>modulo2.html</code>, renomeie e edite o texto. Depois adicione uma linha na lista <code>MODULOS</code> do arquivo <code>js/app.js</code>.</p>
+
+    <details>
+      <summary>Como publicar as mudanças</summary>
+      <p>Salve os arquivos e rode <code>git add .</code>, <code>git commit -m "mensagem"</code> e <code>git push</code>. O site atualiza em cerca de 1 minuto.</p>
+    </details>
+
+    <div class="quiz" data-explicacao="Cada módulo novo precisa de uma linha na lista MODULOS.">
+      <p class="pergunta">O que você precisa fazer, além de criar o arquivo, para o módulo aparecer no índice?</p>
+      <button class="opcao" data-correta="false">Nada, ele aparece sozinho.</button>
+      <button class="opcao" data-correta="true">Adicionar uma linha na lista MODULOS do app.js.</button>
+      <button class="opcao" data-correta="false">Criar uma conta nova no GitHub.</button>
+      <p class="feedback" role="status" aria-live="polite"></p>
+    </div>
+
+    <button class="botao" id="concluir" aria-pressed="false">Marcar como concluído</button>
+    <nav class="navegacao" id="navegacao" aria-label="Navegação entre módulos"></nav>
+  </main>
+  <script src="../js/app.js"></script>
+</body>
+</html>
