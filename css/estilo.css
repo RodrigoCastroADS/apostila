@@ -35,3 +35,29 @@ summary{cursor:pointer;font-weight:700}
 .botao[aria-pressed="true"]{background:#1B7F3B}
 .navegacao{display:flex;justify-content:space-between;gap:1rem;margin-top:2.5rem;flex-wrap:wrap}
 @media (prefers-reduced-motion:no-preference){.opcao,.lista a{transition:border-color .15s}}
+header.topo{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.hud{font-size:.9rem;font-weight:700}
+.menu{display:flex;gap:.6rem;flex-wrap:wrap;margin:1rem 0}
+.menu a{padding:.5rem .9rem;border:2px solid var(--primaria);border-radius:2rem;text-decoration:none;font-weight:700}
+.nivel{display:flex;justify-content:space-between;font-weight:700}
+.medalhas{display:flex;gap:.5rem;flex-wrap:wrap;list-style:none;padding:0}
+.medalhas li{padding:.35rem .8rem;border:2px dashed var(--borda);border-radius:2rem;color:var(--suave)}
+.medalhas li.on{border:2px solid var(--destaque);color:var(--texto);background:color-mix(in srgb,var(--destaque) 25%,transparent)}
+.lista .breve{opacity:.65;border-style:dashed}
+.lab{list-style:none;padding:0}
+.lab li{margin:.6rem 0;display:flex;gap:.6rem;align-items:flex-start}
+.lab input{width:1.4rem;height:1.4rem;margin-top:.25rem;accent-color:var(--primaria)}
+.fluxo{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin:1rem 0}
+.fluxo div{padding:1rem .5rem;text-align:center;font-weight:700;border:2px solid var(--borda);border-radius:.5rem;background:var(--fundo)}
+.fluxo div.ativo{border-color:var(--primaria);background:var(--destaque);color:#14202B;transform:scale(1.04)}
+.botoes{display:flex;gap:.5rem;flex-wrap:wrap}
+.botoes button,.item button{font:inherit;border:2px solid var(--primaria);background:var(--painel);color:var(--texto);border-radius:.4rem;padding:.4rem .8rem;cursor:pointer}
+.item{list-style:none;margin:.6rem 0;display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+.item b{min-width:8rem}
+.item .res{font-weight:700}
+#aviso{position:fixed;left:50%;bottom:1.2rem;transform:translateX(-50%);background:#084E54;color:#fff;padding:.7rem 1.2rem;border-radius:.5rem;font-weight:700;opacity:0;pointer-events:none;z-index:9}
+#aviso.on{opacity:1}
+table.plano{width:100%;border-collapse:collapse;margin:1rem 0}
+.plano th,.plano td{border:2px solid var(--borda);padding:.5rem;text-align:left;vertical-align:top}
+.apresentar{font-size:140%}
+@media print{.topo,.nao-imprimir,#aviso{display:none!important}body{background:#fff;color:#000;font-size:11pt}main{max-width:none;padding:0}section{break-before:page}}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ferramentas online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="topo"><a href="index.html">Voltar à trilha</a></header>
+  <main>
+    <h1>Ferramentas online para treinar</h1>
+    <p class="intro">Abra a ferramenta em outra aba e pratique. Todas funcionam no celular, tablet e computador.</p>
+    <ul class="lista" id="ferr"></ul>
+  </main>
+  <script>
+    const F = [
+      ["Google Documentos", "https://docs.google.com/document/", "Textos, formatação e PDF (Unidade 6)"],
+      ["Google Planilhas", "https://docs.google.com/spreadsheets/", "Fórmulas, funções e gráficos (Unidades 7 e 8)"],
+      ["Google Apresentações", "https://docs.google.com/presentation/", "Slides (Unidade 9)"],
+      ["Google Forms", "https://docs.google.com/forms/", "Coleta de dados (Unidade 10)"],
+      ["Looker Studio", "https://lookerstudio.google.com/", "Primeiro painel (Unidade 10)"],
+      ["Google Drive", "https://drive.google.com/", "Armazenamento e compartilhamento (Unidade 10)"],
+      ["Google Sites", "https://sites.google.com/", "Portfólio profissional (Unidade 13)"],
+      ["Google Acadêmico", "https://scholar.google.com.br/", "Pesquisa e checagem de fontes (Unidade 11)"],
+      ["Quiz de phishing do Google", "https://phishingquiz.withgoogle.com/", "Identificar golpes (Unidade 11)"],
+      ["Have I Been Pwned", "https://haveibeenpwned.com/", "Verificar vazamento de e-mail (Unidade 11)"],
+      ["Typing.com", "https://www.typing.com/", "Treino de digitação (todas as unidades)"],
+      ["LibreOffice (download)", "https://www.libreoffice.org/download/", "Writer, Calc e Impress (Unidades 6 a 9)"]
+    ];
+    const ul = document.getElementById("ferr");
+    F.forEach(([n, u, d]) => { const li = document.createElement("li"); li.innerHTML = `<a href="${u}" target="_blank" rel="noopener"><strong>${n}</strong><span>${d}</span></a>`; ul.appendChild(li); });
+  </script>
+</body>
+</html>

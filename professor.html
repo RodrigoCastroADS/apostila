@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Área do professor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="topo"><a href="index.html">Voltar à trilha</a></header>
+  <main>
+    <h1>Área do professor</h1>
+    <p class="nao-imprimir"><button class="botao" id="ap" aria-pressed="false">Modo apresentação (letra maior)</button> <button class="botao" onclick="window.print()">Imprimir plano</button></p>
+
+    <h2>Plano de aula: Unidade 1, Introdução à informática (3h)</h2>
+    <p><strong>Objetivo:</strong> distinguir hardware e software, entrada e saída, dado e informação, e reconhecer onde a IA já está presente.</p>
+    <table class="plano">
+      <tr><th>Momento</th><th>Tempo</th><th>O que fazer</th></tr>
+      <tr><td>Abertura</td><td>15 min</td><td>Pergunta: "Que tecnologias você usou hoje?" Levantar respostas no quadro.</td></tr>
+      <tr><td>Explicação</td><td>45 min</td><td>Conteúdo da unidade com exemplos. Usar o diagrama entrada, processamento e saída com a turma.</td></tr>
+      <tr><td>Jogos</td><td>30 min</td><td>Alunos fazem o jogo hardware ou software e o quiz no próprio aparelho. Discutir erros comuns.</td></tr>
+      <tr><td>Laboratório</td><td>60 min</td><td>Três tarefas do laboratório com ferramentas online. Circular pela sala.</td></tr>
+      <tr><td>Fechamento</td><td>30 min</td><td>Cada aluno diz uma coisa que aprendeu. Conferir o XP e as medalhas.</td></tr>
+    </table>
+    <h2>Avaliação</h2>
+    <p>Participação nos jogos, laboratório concluído (Google Docs com a lista de hardware e software) e quiz. Peça que o aluno mostre o documento criado.</p>
+    <h2>Gabarito</h2>
+    <p>Hardware: teclado, memória RAM. Software: Windows, navegador, editor de texto. Quiz 1: 8 bits. Quiz 2: informação.</p>
+    <h2>Dica de turma</h2>
+    <p>Defina uma meta de XP por semana e mostre a classificação por nível, sem expor nomes, para estimular sem constranger.</p>
+    <div class="caixa dica nao-imprimir"><strong>Aviso:</strong> este site é público. O gabarito aqui não é secreto. Se precisar de privacidade, guarde o gabarito no Google Drive ou Classroom.</div>
+  </main>
+  <script>
+    document.getElementById("ap").onclick = (e) => { const on = document.body.classList.toggle("apresentar"); e.target.setAttribute("aria-pressed", on); };
+  </script>
+</body>
+</html>

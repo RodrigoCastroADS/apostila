@@ -3,39 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unidade 1: Introdução à informática</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/estilo.css">
-  <title>Módulo 1: Como usar esta apostila</title>
 </head>
 <body data-modulo="modulo1.html">
-  <header class="topo"><a href="../index.html">Voltar ao índice</a></header>
+  <header class="topo"><a href="../index.html">Voltar à trilha</a><span class="hud" id="hud"></span></header>
   <main>
-    <h1>Módulo 1: Como usar esta apostila</h1>
-    <p class="intro">Este módulo é um exemplo. Troque os textos pelo seu conteúdo.</p>
+    <h1>Unidade 1: Introdução à informática</h1>
+    <div class="conteudo">
+      <h2>Tecnologia, computador, computação e informática</h2>
+      <p>Tecnologia é o conjunto de ferramentas criadas para resolver problemas. O computador é a máquina que recebe dados, processa e entrega resultados. Computação é a ciência que estuda como fazer isso, e informática é o uso desses recursos para tratar informações de forma automática.</p>
 
-    <h2>Estrutura de um módulo</h2>
-    <p>Cada módulo é um arquivo HTML dentro da pasta <code>modulos/</code>. Ele segue três blocos: explicação, exemplo e atividade.</p>
-    <div class="caixa dica"><strong>Dica:</strong> use a classe <code>caixa dica</code> para destacar avisos e observações importantes.</div>
+      <h2>Hardware e software</h2>
+      <p><strong>Hardware</strong> é a parte física que você pode tocar: teclado, mouse, monitor, processador, memória. <strong>Software</strong> é a parte lógica: programas e sistemas, como o Windows, o navegador e o editor de texto. Um não funciona sem o outro.</p>
 
-    <h2>Como criar um módulo novo</h2>
-    <p>Copie o <code>modulo2.html</code>, renomeie e edite o texto. Depois adicione uma linha na lista <code>MODULOS</code> do arquivo <code>js/app.js</code>.</p>
+      <h2>Dispositivos de entrada e saída</h2>
+      <p>Periféricos de <strong>entrada</strong> enviam dados ao computador (teclado, mouse, microfone). Os de <strong>saída</strong> mostram resultados (monitor, impressora, caixa de som). O <strong>processamento</strong> acontece no processador.</p>
+      <div class="so-tela">
+        <div class="fluxo" aria-hidden="true"><div data-fase="entrada">Entrada</div><div data-fase="proc">Processamento</div><div data-fase="saida">Saída</div></div>
+        <p>Clique em um dispositivo para ver onde ele atua:</p>
+        <div class="botoes">
+          <button data-fase="entrada">Teclado</button><button data-fase="entrada">Mouse</button><button data-fase="entrada">Microfone</button>
+          <button data-fase="proc">Processador</button>
+          <button data-fase="saida">Monitor</button><button data-fase="saida">Impressora</button><button data-fase="saida">Caixa de som</button>
+        </div>
+        <p id="fluxo-txt" role="status" aria-live="polite"></p>
+      </div>
 
-    <details>
-      <summary>Como publicar as mudanças</summary>
-      <p>Salve os arquivos e rode <code>git add .</code>, <code>git commit -m "mensagem"</code> e <code>git push</code>. O site atualiza em cerca de 1 minuto.</p>
-    </details>
+      <h2>Evolução dos computadores (resumo)</h2>
+      <p>1ª geração: válvulas, máquinas enormes. 2ª: transistores. 3ª: circuitos integrados. 4ª: microprocessadores e computadores pessoais. 5ª: inteligência artificial, nuvem e dispositivos móveis.</p>
 
-    <div class="quiz" data-explicacao="Cada módulo novo precisa de uma linha na lista MODULOS.">
-      <p class="pergunta">O que você precisa fazer, além de criar o arquivo, para o módulo aparecer no índice?</p>
-      <button class="opcao" data-correta="false">Nada, ele aparece sozinho.</button>
-      <button class="opcao" data-correta="true">Adicionar uma linha na lista MODULOS do app.js.</button>
-      <button class="opcao" data-correta="false">Criar uma conta nova no GitHub.</button>
-      <p class="feedback" role="status" aria-live="polite"></p>
+      <h2>A evolução da internet</h2>
+      <p><strong>Web 1.0:</strong> páginas para ler, com pouca interação. <strong>Web 2.0:</strong> redes sociais, blogs e vídeos, em que todos produzem conteúdo. <strong>Web 3.0:</strong> web mais inteligente e personalizada, com apoio de IA e dados conectados.</p>
+
+      <h2>Dados, informação e conhecimento</h2>
+      <p>O número 38,5 é um <strong>dado</strong>. "A temperatura do paciente é 38,5 °C" é <strong>informação</strong>. Saber que isso é febre e o que fazer é <strong>conhecimento</strong>.</p>
+
+      <h2>Unidades de medida</h2>
+      <p>O menor valor é o <strong>bit</strong>. Oito bits formam um <strong>byte</strong>. Depois vêm KB, MB, GB e TB, cada um com cerca de 1024 vezes o anterior.</p>
+
+      <h2>O que é Inteligência Artificial</h2>
+      <p>IA é a tecnologia que permite a sistemas realizar tarefas que normalmente exigem inteligência humana, como reconhecer voz, traduzir, recomendar vídeos e gerar textos. Ela já está no celular, nas redes sociais e nos bancos. Sempre confira o que ela responde.</p>
     </div>
 
-    <button class="botao" id="concluir" aria-pressed="false">Marcar como concluído</button>
-    <nav class="navegacao" id="navegacao" aria-label="Navegação entre módulos"></nav>
+    <div class="so-tela">
+      <h2>Jogo: hardware ou software?</h2>
+      <div class="classif" data-id="m01:cl1">
+        <ul style="padding:0">
+          <li class="item" data-resp="hardware"><b>Teclado</b><button data-v="hardware">Hardware</button><button data-v="software">Software</button><span class="res" role="status"></span></li>
+          <li class="item" data-resp="software"><b>Windows</b><button data-v="hardware">Hardware</button><button data-v="software">Software</button><span class="res" role="status"></span></li>
+          <li class="item" data-resp="software"><b>Navegador</b><button data-v="hardware">Hardware</button><button data-v="software">Software</button><span class="res" role="status"></span></li>
+          <li class="item" data-resp="hardware"><b>Memória RAM</b><button data-v="hardware">Hardware</button><button data-v="software">Software</button><span class="res" role="status"></span></li>
+          <li class="item" data-resp="software"><b>Editor de texto</b><button data-v="hardware">Hardware</button><button data-v="software">Software</button><span class="res" role="status"></span></li>
+        </ul>
+      </div>
+
+      <h2>Quiz</h2>
+      <div class="quiz" data-id="m01:q1" data-explicacao="Oito bits formam um byte.">
+        <p class="pergunta">Quantos bits formam um byte?</p>
+        <button class="opcao" data-correta="false">4</button>
+        <button class="opcao" data-correta="true">8</button>
+        <button class="opcao" data-correta="false">1024</button>
+        <p class="feedback" role="status" aria-live="polite"></p>
+      </div>
+      <div class="quiz" data-id="m01:q2" data-explicacao="Dado solto vira informação quando ganha contexto.">
+        <p class="pergunta">"Temperatura: 38,5 °C" é um exemplo de:</p>
+        <button class="opcao" data-correta="false">Dado, sem contexto nenhum</button>
+        <button class="opcao" data-correta="true">Informação, porque tem contexto</button>
+        <button class="opcao" data-correta="false">Hardware</button>
+        <p class="feedback" role="status" aria-live="polite"></p>
+      </div>
+
+      <h2>Laboratório</h2>
+      <p>Faça no computador e marque ao concluir:</p>
+      <ul class="lab">
+        <li><input type="checkbox" id="l1" data-id="m01:lab1" data-xp="10"><label for="l1">Abra o <a href="https://docs.google.com/document/" target="_blank" rel="noopener">Google Docs</a> e liste 5 itens de hardware e 5 de software que você usa no dia a dia.</label></li>
+        <li><input type="checkbox" id="l2" data-id="m01:lab2" data-xp="10"><label for="l2">Pesquise no <a href="https://www.google.com.br" target="_blank" rel="noopener">Google</a> a diferença entre Web 1.0 e Web 2.0 e anote um exemplo de cada.</label></li>
+        <li><input type="checkbox" id="l3" data-id="m01:lab3" data-xp="10"><label for="l3">Treine digitação por 5 minutos no <a href="https://www.typing.com/" target="_blank" rel="noopener">Typing.com</a>.</label></li>
+      </ul>
+      <button class="botao" id="concluir" aria-pressed="false">Concluir unidade (+30 XP)</button>
+      <nav class="navegacao" id="navegacao" aria-label="Navegação entre unidades"></nav>
+    </div>
   </main>
   <script src="../js/app.js"></script>
 </body>

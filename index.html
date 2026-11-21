@@ -3,22 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Minha Apostila Interativa</title>
+  <title>Informática Aplicada</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-  <header class="topo"><a href="index.html">Minha Apostila Interativa</a></header>
+  <header class="topo"><a href="index.html">Informática Aplicada</a><span class="hud" id="hud"></span></header>
   <main>
-    <h1>Comece por aqui</h1>
-    <p class="intro">Leia os módulos na ordem, responda aos exercícios e marque cada módulo como concluído. Seu progresso fica salvo neste navegador.</p>
+    <h1>Sua trilha de aprendizagem</h1>
+    <p class="intro">Leia, pratique nas ferramentas online e ganhe XP. Cada unidade tem quiz, jogos e laboratório.</p>
+    <nav class="menu" aria-label="Seções do site">
+      <a href="ferramentas.html">Ferramentas online</a>
+      <a href="apostila.html">Apostila (PDF e Word)</a>
+      <a href="professor.html">Área do professor</a>
+    </nav>
     <div class="caixa">
-      <p id="texto-progresso" style="margin:0 0 .5rem">0 módulos concluídos</p>
+      <div class="nivel" id="nivel"></div>
+      <progress id="barra-xp" value="0" max="100" aria-label="Progresso no nível"></progress>
+      <ul class="medalhas" id="medalhas" aria-label="Medalhas"></ul>
+    </div>
+    <div class="caixa">
+      <p id="texto-progresso" style="margin:0 0 .5rem"></p>
       <progress id="barra" value="0" max="1" aria-labelledby="texto-progresso"></progress>
     </div>
     <ul class="lista" id="lista-modulos"></ul>
-    <noscript><p>Ative o JavaScript para ver a lista de módulos.</p></noscript>
   </main>
   <script src="js/app.js"></script>
 </body>
